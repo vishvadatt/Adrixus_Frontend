@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import Dashboard from './Component/Dashboard/Dashboard';
+import Signin from './Component/Signin';
+import Signup from './Component/Auth/Signup';
+import { useEffect } from 'react';
 function App() {
+  
+  console.log("item..",localStorage.getItem('token'));
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path='/dashboard' element={<Dashboard />}/>
+          <Route path='/Signin' element={<Signin />}/>
+          <Route path='/' element={<Signup />}/>
+        </Routes>
+      </Router>
     </div>
   );
 }

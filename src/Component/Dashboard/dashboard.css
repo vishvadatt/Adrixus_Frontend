@@ -1,0 +1,38 @@
+.content-table{
+    border-collapse: collapse !important;
+    margin: 25px 0 !important;
+    font-size: 1em !important;
+    min-width: 100% !important;
+    overflow: hidden !important;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    background-color: #DCDCDC !important;    
+}
+
+.content-table thead tr {
+    background-color: #009879 !important;
+    text-align: center !important;
+    color: black !important;
+    font-weight: bold !important;
+}
+
+.content-table th,
+.content-table td {     
+    text-align: start;
+    padding: 10px 13px !important;  
+    padding: 5px 5px 5px 5px !important;
+}
+
+.searchInput{
+    padding: 5px;
+    font-size: 15px;
+    width: 40%;
+    outline: none;
+}
+
+.AgeFilter{
+    width: 5%;
+    padding: 7px;
+    outline: none;
+    border: none;
+    background: lightgray;
+}
